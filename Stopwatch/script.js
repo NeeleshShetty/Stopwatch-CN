@@ -1,6 +1,8 @@
 let [seconds , minutes, hours] = [0,0,0];
         let displayTime = document.getElementById("displayTime");
         let timer = null;
+
+        // Stopwatch time display in h,m,s
         const Stopwatch = ()=>{
             seconds++;
             if(seconds == 60){
@@ -20,6 +22,7 @@ let [seconds , minutes, hours] = [0,0,0];
             displayTime.innerHTML = h + ":" + m + ":" + s;
         }
 
+        // Start stop watch button event listener
         const watchStart  = ()=>{
             if(timer!= null){
                 clearInterval(timer);
@@ -31,6 +34,7 @@ let [seconds , minutes, hours] = [0,0,0];
             clearInterval(timer);
         }
 
+        // Reset watch button event listener
         const watchReset = ()=>{
             clearInterval(timer);
             seconds = 0 ;
