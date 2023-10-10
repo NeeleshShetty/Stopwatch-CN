@@ -5,7 +5,6 @@ Table of Contents
 .Features
 .How to Use
 
---***************--
 .Features
 Start: Begin the stopwatch timer.
 Pause: Pause the stopwatch timer.
